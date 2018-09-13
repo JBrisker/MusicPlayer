@@ -1,6 +1,7 @@
 package com.example.brandon.musicplayer;
 
-import java.util.ArrayList;
+
+
 
 public class MusicInfo {
 
@@ -8,17 +9,12 @@ public class MusicInfo {
 
     private final String mArtistName;
 
-    private final String mAlbumName;
 
-    public MusicInfo(String song, String artist, String album){
-        this.mSongTitle=song;
-        this.mArtistName=artist;
-       this. mAlbumName=album;
+    public MusicInfo(String song, String artist){
+        mSongTitle=song;
+        mArtistName=artist;
+
     }
-
-   // public MusicInfo(SongActivity songActivity, ArrayList<MusicInfo> songs) {
-
-   // }
 
     public String getSongTitle(){
 
@@ -28,10 +24,6 @@ public class MusicInfo {
     public String getArtistName(){
 
         return mArtistName;
-    }
-
-    public String getAlbumName() {
-        return mAlbumName;
     }
 
 }

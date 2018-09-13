@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.view.View.OnClickListener;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,10 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the numbers category
-        TextView now_playing = (TextView) findViewById(R.id.now_playing);
+        TextView now_playing = findViewById(R.id.now_playing);
 
-        // Set a click listener on that View
-        now_playing.setOnClickListener(new View.OnClickListener() {
+          now_playing.setOnClickListener(new View.OnClickListener() {
             // This method will be executed for CurrentPlay.
             @Override
             public void onClick(View view) {
@@ -31,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the family category
-        TextView song_list = (TextView) findViewById(R.id.song_list);
+        TextView song_list = findViewById(R.id.song_list);
 
         // Set a click listener on that View
         song_list.setOnClickListener(new View.OnClickListener() {
